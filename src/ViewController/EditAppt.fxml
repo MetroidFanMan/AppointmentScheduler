@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.EditApptController">
+   <children>
+      <Label layoutX="60.0" layoutY="100.0" text="Title:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="150.0" text="Description:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="250.0" text="Contact:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="40.0" text="Edit Appointment">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveBtn" layoutX="125.0" layoutY="550.0" mnemonicParsing="false" onAction="#saveBtn" prefWidth="50.0" text="Save" />
+      <Label layoutX="63.0" layoutY="300.0" text="URL:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="500.0" text="Start Date:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="urlTxt" layoutX="130.0" layoutY="300.0" />
+      <Label layoutX="58.0" layoutY="350.0" text="Type:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="200.0" text="Location:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDateDp" layoutX="118.0" layoutY="500.0" promptText="Select a date..." />
+      <ChoiceBox fx:id="titleCb" layoutX="130.0" layoutY="99.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="descCb" layoutX="130.0" layoutY="149.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="locCb" layoutX="130.0" layoutY="199.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="contCb" layoutX="130.0" layoutY="249.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="typeCb" layoutX="130.0" layoutY="349.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="400.0" text="Start Time:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="startHourCb" layoutX="130.0" layoutY="399.0" prefHeight="25.0" prefWidth="58.0" />
+      <ChoiceBox fx:id="startMinCb" layoutX="205.0" layoutY="399.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label layoutX="1.0" layoutY="450.0" text="Appt Length:">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="lengthCb" layoutX="130.0" layoutY="450.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="205.0" layoutY="454.0" text="minutes">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
